@@ -1,2 +1,4 @@
 sum_of_two_digits.py and Unit Tests -> Algorithmic Toolbox
 by University of California San Diego & National Research University Higher School of Economics
+max_pairwise_product_faster(numbers): -> Algorithmic Toolbox
+by University of California San Diego & National Research University Higher School of Economics
