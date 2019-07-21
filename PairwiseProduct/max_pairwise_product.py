@@ -36,6 +36,6 @@ if __name__ == '__main__':
         max1,etime1 =(max_pairwise_product(input_numbers))
         max2,etime2 =(max_pairwise_product_faster(input_numbers))
         if max1 == max2:
-            print ("OK", max1,etime1,etime2, etime1/etime2)
+            print ("OK", max1,etime1,etime2)
         else:
             test = False 
