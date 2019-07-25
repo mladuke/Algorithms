@@ -1,7 +1,7 @@
 def Largest(list):
     list = sorted(list)
     numS =""
-    for i in range(len(list)):
+    for _ in range(len(list)):
         numS = numS + str(list.pop())
     return int(numS)
 
