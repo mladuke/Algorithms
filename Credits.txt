@@ -3,3 +3,5 @@ by University of California San Diego & National Research University Higher Scho
 max_pairwise_product_faster(numbers) -> Algorithmic Toolbox
 by University of California San Diego & National Research University Higher School of Economics
 recur_fibo(n) -> https://www.programiz.com/python-programming/examples/fibonacci-recursion
+fuel.py-> Algorithmic Toolbox
+by University of California San Diego & National Research University Higher School of Economics
