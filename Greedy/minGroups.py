@@ -6,7 +6,6 @@
 # count is the number of segments formed
 # R is a list of segments formed
 
-
 def pointsCoveredSorted(L,r):
     R = []
     i = 0
@@ -15,7 +14,7 @@ def pointsCoveredSorted(L,r):
     while i < n:
         count += 1 
         max = L[i]+r
-        newRange =(L[i],L[i]+r)
+        newRange =(L[i],max)
         R.append(newRange)
         i += 1
         while ((i < n) and L[i] <= max):
