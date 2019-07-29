@@ -7,3 +7,5 @@ fuel.py-> Algorithmic Toolbox
 by University of California San Diego & National Research University Higher School of Economics
 minGroups -> Based on algorithm presented in Algorithmic Toolbox
 by University of California San Diego & National Research University Higher School of Economics
+fractional_knapsack.py ->
+ https://www.sanfoundry.com/python-program-solve-fractional-knapsack-problem-using-greedy-algorithm/
