@@ -566,10 +566,10 @@ def preprocessing(mazeMap, mazeWidth, mazeHeight, playerLocation, opponentLocati
 def new_turn(mazeMap, mazeWidth, mazeHeight, playerLocation, opponentLocation, playerScore, opponentScore, piecesOfCheese, timeAllowed):    
     global moveList
     if moveList != []:
-        moveList.pop()
+        return moveList.pop(0)
     else:
         preprocessing(mazeMap, mazeWidth, mazeHeight, playerLocation, opponentLocation, piecesOfCheese, timeAllowed)
-        moveList.pop()
+        return moveList.pop(0)
 
 
 # In[22]:
