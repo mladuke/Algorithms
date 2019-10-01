@@ -1,0 +1,196 @@
+# Copyright © 2019 AlgoExpert, LLC. All rights reserved.</span></span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment"># O(n) time | O(1) space</span></span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">def</span> <span class="cm-def">findThreeLargestNumbers</span>(<span class="cm-variable">array</span>):</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-variable">threeLargest</span> <span class="cm-operator">=</span> [<span class="cm-keyword">None</span>, <span class="cm-keyword">None</span>, <span class="cm-keyword">None</span>]</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-keyword">for</span> <span class="cm-variable">num</span> <span class="cm-keyword">in</span> <span class="cm-variable">array</span>:</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">        <span class="cm-variable">updateLargest</span>(<span class="cm-variable">threeLargest</span>, <span class="cm-variable">num</span>)</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-keyword">return</span> <span class="cm-variable">threeLargest</span></span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">def</span> <span class="cm-def">updateLargest</span>(<span class="cm-variable">threeLargest</span>, <span class="cm-variable">num</span>):</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-keyword">if</span> <span class="cm-variable">threeLargest</span>[<span class="cm-number">2</span>] <span class="cm-keyword">is</span> <span class="cm-keyword">None</span> <span class="cm-keyword">or</span> <span class="cm-variable">num</span> <span class="cm-operator">&gt;</span> <span class="cm-variable">threeLargest</span>[<span class="cm-number">2</span>]:</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">        <span class="cm-variable">shiftAndUpdate</span>(<span class="cm-variable">threeLargest</span>, <span class="cm-variable">num</span>, <span class="cm-number">2</span>)</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-keyword">elif</span> <span class="cm-variable">threeLargest</span>[<span class="cm-number">1</span>] <span class="cm-keyword">is</span> <span class="cm-keyword">None</span> <span class="cm-keyword">or</span> <span class="cm-variable">num</span> <span class="cm-operator">&gt;</span> <span class="cm-variable">threeLargest</span>[<span class="cm-number">1</span>]:</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">        <span class="cm-variable">shiftAndUpdate</span>(<span class="cm-variable">threeLargest</span>, <span class="cm-variable">num</span>, <span class="cm-number">1</span>)</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-keyword">elif</span> <span class="cm-variable">threeLargest</span>[<span class="cm-number">0</span>] <span class="cm-keyword">is</span> <span class="cm-keyword">None</span> <span class="cm-keyword">or</span> <span class="cm-variable">num</span> <span class="cm-operator">&gt;</span> <span class="cm-variable">threeLargest</span>[<span class="cm-number">0</span>]:</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">        <span class="cm-variable">shiftAndUpdate</span>(<span class="cm-variable">threeLargest</span>, <span class="cm-variable">num</span>, <span class="cm-number">0</span>)</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">def</span> <span class="cm-def">shiftAndUpdate</span>(<span class="cm-variable">array</span>, <span class="cm-variable">num</span>, <span class="cm-variable">idx</span>):</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">    <span class="cm-keyword">for</span> <span class="cm-variable">i</span> <span class="cm-keyword">in</span> <span class="cm-builtin">range</span>(<span class="cm-variable">idx</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>):</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">        <span class="cm-keyword">if</span> <span class="cm-variable">i</span> <span class="cm-operator">==</span> <span class="cm-variable">idx</span>:</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">            <span class="cm-variable">array</span>[<span class="cm-variable">i</span>] <span class="cm-operator">=</span> <span class="cm-variable">num</span></span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">        <span class="cm-keyword">else</span>:</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;">            <span class="cm-variable">array</span>[<span class="cm-variable">i</span>] <span class="cm-operator">=</span> <span class="cm-variable">array</span>[<span class="cm-variable">i</span> <span class="cm-operator">+</span> <span class="cm-number">1</span>]</span></pre>
+</div>
+<div style="position: relative;">
+    <div class="CodeMirror-gutter-wrapper" style="left: -36px;">
+        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div>
+    </div>
+    <pre class=" CodeMirror-line "
+        role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="position: absolute; height: 15px; width: 1px; border-bottom: 0px solid transparent; top: 488px;"></div>
+<div class="CodeMirror-gutters" style="height: 503px; left: 0px;">
+    <div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 36px;"></div>
+</div>
+</div>
+</div>
+<div class="CodeMirror cm-s-monokai CodeMirror-overlayscroll" style="width: 100%; height: 100%; padding: 0px;">
+    <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 40px;"> <textarea
+            autocorrect="off" autocapitalize="off" spellcheck="false"
+            style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"
+            tabindex="0" disabled=""> </textarea> </div>
+    <div class="CodeMirror-overlayscroll-horizontal" cm-not-content="true"
+        style="display: none; right: 0px; left: 36px;">
+        <div style="width: 491.735px; left: 0px;"> </div>
+    </div>
+    <div class="CodeMirror-overlayscroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;">
+        <div style="height: 14.7634px; top: 0px;"> </div>
+    </div>
+    <div class="CodeMirror-scrollbar-filler" cm-not-content="true"> </div>
+    <div class="CodeMirror-gutter-filler" cm-not-content="true"> </div>
+    <div class="CodeMirror-scroll" tabindex="-1">
+        <div class="CodeMirror-sizer"
+            style="margin-left: 36px; margin-bottom: -15px; border-right-width: 15px; min-height: 488px; min-width: 496.016px; padding-right: 6px; padding-bottom: 0px;">
+            <div style="position: relative; top: 0px;">
+                <div class="CodeMirror-lines" role="presentation">
+                    <div role="presentation" style="position: relative; outline: none;">
+                        <div class="CodeMirror-measure">
+                            <pre> x < /pre > </div > <div class = "CodeMirror-measure" > </div > <div style = "position: relative; z-index: 1;" > <div class = "CodeMirror-selected" style = "position: absolute; left: 4px; top: 0px; width: 561px; height: 20px;" > </div > <div class = "CodeMirror-selected" style = "position: absolute; left: 4px; top: 440px; width: 295.141px; height: 20px;" > </div > <div class = "CodeMirror-selected" style = "position: absolute; left: 4px; top: 20px; width: 561px; height: 420px;" > </div > </div > <div class = "CodeMirror-cursors" > </div > <div class = "CodeMirror-code" role = "presentation" style = "" > <div style = "position: relative;" > <div class = "CodeMirror-gutter-wrapper" style = "left: -36px;" > <div class = "CodeMirror-linenumber CodeMirror-gutter-elt" style = "left: 0px; width: 21px;" > 1 < /div > </div > <pre class = " CodeMirror-line " role = "presentation" > <span role = "presentation" style = "padding-right: 0.1px;" > <span class = "cm-comment" >
